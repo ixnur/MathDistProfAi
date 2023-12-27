@@ -2,7 +2,7 @@ import numpy as np
 import joblib
 import time
 
-simple_model_filename = "/home/nur/Masaüstü/simple_trained_model.joblib"
+simple_model_filename = "simple_trained_model.joblib"
 loaded_simple_model = joblib.load(simple_model_filename)
 
 for i in range(1, 11):
