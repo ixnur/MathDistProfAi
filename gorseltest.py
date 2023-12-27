@@ -5,7 +5,7 @@ import numpy as np
 
 x, y, z = sp.symbols('x y z')
 
-dataset_filename = "/home/nur/Masaüstü/dataset.csv"
+dataset_filename = "Masaüstü/dataset.csv"
 data = pd.read_csv(dataset_filename)
 
 failures = []
