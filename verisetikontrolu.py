@@ -4,7 +4,7 @@ import sympy
 import random
 import matplotlib.pyplot as plt
 
-data_file = "/home/nur/Masaüstü/dataset.csv"
+data_file = "Masaüstü/dataset.csv"
 dataset = pd.read_csv(data_file)
 
 print("Veri Seti Örnekleri:")
