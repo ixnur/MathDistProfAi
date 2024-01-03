@@ -18,5 +18,5 @@ def check_dataset(filename):
     else:
         print(f"{errors} hata bulundu.")
 
-dataset_filename = "/home/nur/Masaüstü/simple_dataset.csv"
+dataset_filename = "simple_dataset.csv"
 check_dataset(dataset_filename)
