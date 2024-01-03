@@ -15,12 +15,10 @@ for index, row in data.iterrows():
     result = row['Result']
     expression = sp.sympify(expression_str)
     evaluated_result = expression.evalf(subs={x: 1, y: 1, z: 1})
-
     if np.abs(evaluated_result - result) > 0:
         print(f"Doğrulama başarısız - İfade: {expression_str}, Beklenen: {result}, Bulunan: {evaluated_result}")
         failures.append(index)
 
-# Farkları görselleştir
 plt.figure(figsize=(10, 6))
 plt.bar(failures, [1] * len(failures), color='red', alpha=0.7, label='Doğrulama Başarısızlığı')
 plt.title('Doğrulama Başarısızlıkları')
