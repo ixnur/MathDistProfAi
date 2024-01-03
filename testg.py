@@ -1,7 +1,7 @@
 import pandas as pd
 import sympy
 
-data_file = "/home/nur/Masaüstü/dataset.csv"
+data_file = "dataset.csv"
 dataset = pd.read_csv(data_file)
 x, y, z = sympy.symbols('x y z')
 for index, row in dataset.iterrows():
