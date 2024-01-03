@@ -6,7 +6,7 @@ import string
 def check_username(username):
     url = f'https://github.com/{username}'
     response = requests.get(url)
-    return response.status_code == 404  # 404 durumu kullanıcı adının boşta olduğunu gösterir.
+    return response.status_code == 404  
 
 def generate_usernames(name):
     for length in range(1, 4):
