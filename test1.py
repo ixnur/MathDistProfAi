@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 x, y, z = sp.symbols('x y z')
 
-dataset_filename = "/home/nur/Masaüstü/dataset.csv"
+dataset_filename = "dataset.csv"
 data = pd.read_csv(dataset_filename)
 
 for index, row in data.iterrows():
