@@ -7,8 +7,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 import joblib
 
-dataset1_filename = "/home/nur/Masaüstü/simple_dataset.csv"
-dataset2_filename = "/home/nur/Masaüstü/dataset.csv"
+dataset1_filename = "simple_dataset.csv"
+dataset2_filename = "dataset.csv"
 
 df1 = pd.read_csv(dataset1_filename)
 df2 = pd.read_csv(dataset2_filename)
@@ -16,7 +16,7 @@ df2 = pd.read_csv(dataset2_filename)
 df = pd.concat([df1, df2], ignore_index=True)
 
 X = df['Expression']  
-y = df['Result']  #(Result sütunu)
+y = df['Result']  
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=22)
 simple_model = MLPRegressor(hidden_layer_sizes=(10,), max_iter=100, random_state=22)
