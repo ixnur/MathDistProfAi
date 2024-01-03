@@ -18,8 +18,7 @@ def find_available_usernames(name):
         print(f"Deneniyor: {username}")
         if check_username(username):
             print(f"Boşta olan kullanıcı adı bulundu: {username}")
-        time.sleep(15)  # Her istek arasına 11 saniye bekletme ekleyin
-
+        time.sleep(15)  
 if __name__ == "__main__":
-    ad = "nur"  # Adınızı veya takma adınızı buraya girin
+    ad = "nur" 
     find_available_usernames(ad)
